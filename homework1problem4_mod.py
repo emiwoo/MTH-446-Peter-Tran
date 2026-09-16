@@ -12,7 +12,7 @@ errors = []
 xlist = []
 
 while 1:                            # Always run until tolerance level is greater than change in iteration from x to newX
-    iterations.append(iteration)
+    iterations.append(iteration)    # Record data, that being the iteration count, the x value, and errors
     xlist.append(x)
     errors.append(abs(x - 3))
     
@@ -36,7 +36,7 @@ table = pd.DataFrame({                              # Form table and print value
 
 print(table)
 
-plt.semilogy(iterations, errors)
+plt.semilogy(iterations, errors)                    # Plot graph
 plt.xlabel("Iterations")
 plt.ylabel("Errors")
 plt.show()
